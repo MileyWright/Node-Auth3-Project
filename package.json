@@ -1,0 +1,31 @@
+{
+  "name": "node-auth3-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^3.0.8",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.10",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MileyWright/Node-Auth3-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MileyWright/Node-Auth3-Project/issues"
+  },
+  "homepage": "https://github.com/MileyWright/Node-Auth3-Project#readme"
+}
