@@ -2,6 +2,7 @@ const router = require('express').Router();
 const Users = require('./users-model');
 // const restricted = require('../auth/restricted-middleware.js');
 
+
 router.get('/', (req,res) => {
     User.find()
         .then(user => {
@@ -13,9 +14,9 @@ router.get('/', (req,res) => {
         })
 })
 
-//GET auth/user/dept
+//GET auth/users/dept
 router.get('/dept', (req, res) => {
-    
+
 })
 
 module.exports = router;
