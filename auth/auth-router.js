@@ -19,3 +19,28 @@ router.post('/register', (req,res) => {
         res.status(500).json(err)
     })
 });
+
+//POST /api/auth/login
+router.post('/login', (req, res) => {
+
+})
+
+function getToken(user){
+    const payload ={
+        subject:user.id,
+        username: user.username,
+        department: user.department
+    };
+    const secret = secrets.jwtSecret;
+    const options = {
+        expiresIn: '7d'
+    };
+    return jwt.sign(payload, secret, options);
+};
+
+//GET /api/auth/logout
+router.get('/logout', (req, res) => {
+
+})
+
+module.exports = router;
